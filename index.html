@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dia das Crianças 2026 — Escola Gênesis e Colégio Êxodo</title>
+<meta name="description" content="Inscrição para o Dia das Crianças, 10/10/2026, no Projeto Soli Deo Gloria, Aldeia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --roxo:#5b2a86; --verde:#2e9e5b; --laranja:#f28c28;
+  --marinho:#14284b; --amarelo:#f5c400;
+  --fundo:#faf8f3; --texto:#1f2433; --suave:#5d6478; --borda:#ded9cc; --erro:#b3261e;
+  --raio:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:400 1.0625rem/1.55 Nunito,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:Fredoka,Nunito,sans-serif;font-weight:600;line-height:1.15;margin:0 0 .5em;color:var(--marinho)}
+h2{font-size:1.6rem}
+a{color:var(--roxo)}
+img{max-width:100%;display:block}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+.faixa{height:6px;background:linear-gradient(90deg,var(--roxo) 0 25%,var(--verde) 25% 50%,var(--laranja) 50% 75%,var(--amarelo) 75%)}
+header.topo{background:#fff;border-bottom:1px solid var(--borda)}
+.logos{display:flex;align-items:center;justify-content:center;gap:24px;padding:14px 0;min-height:72px}
+.logos img{max-height:56px;width:auto}
+.hero{position:relative;background:var(--marinho);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero .wrap{position:relative;padding-top:64px;padding-bottom:56px}
+.hero h1{color:#fff;font-size:clamp(2rem,8vw,3.2rem);margin-bottom:.3em}
+.hero p{margin:.2em 0;font-size:1.15rem}
+.hero .dados{margin-top:18px;display:grid;gap:6px;font-weight:700}
+.hero .dados span{color:var(--amarelo)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 22px;border:0;border-radius:var(--raio);font:700 1.05rem Nunito,sans-serif;cursor:pointer;text-decoration:none;text-align:center}
+.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--laranja);outline-offset:2px}
+.btn-p{background:var(--roxo);color:#fff}
+.btn-p:hover{background:#4a2070}
+.btn-a{background:var(--amarelo);color:var(--marinho)}
+.btn-s{background:#fff;color:var(--roxo);border:2px solid var(--roxo)}
+.btn-v{background:var(--verde);color:#fff}
+.btn[disabled]{opacity:.6;cursor:wait}
+.btn-bloco{width:100%}
+section{padding:36px 0}
+.fotos{display:grid;gap:12px}
+.fotos figure{margin:0}
+.fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--raio)}
+.atividades{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:14px 0;list-style:none}
+.atividades li{background:#fff;border:2px solid var(--borda);border-radius:99px;padding:6px 16px;font-weight:700}
+.precos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.preco{background:#fff;border:2px solid var(--borda);border-radius:var(--raio);padding:16px}
+.preco:first-child{border-color:var(--laranja)}
+.preco b{display:block;font:600 1.9rem Fredoka,sans-serif;color:var(--marinho)}
+.cartao{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);padding:20px;margin-bottom:18px}
+.passo{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+.passo i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--roxo);color:#fff;display:grid;place-items:center;font:600 1rem Fredoka,sans-serif;font-style:normal}
+.passo h3{margin:0;font-size:1.25rem}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input[type=text],input[type=tel],select{width:100%;min-height:52px;padding:10px 14px;border:2px solid var(--borda);border-radius:12px;font:inherit;background:#fff;color:inherit}
+input[aria-invalid=true]{border-color:var(--erro)}
+.erro{color:var(--erro);font-weight:700;margin:6px 0 0;min-height:1em}
+.aviso{background:#fff7e0;border-left:5px solid var(--amarelo);padding:12px 14px;border-radius:8px;margin:14px 0}
+.linha-add{display:grid;gap:10px}
+#lista{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+#lista li{border:2px solid var(--borda);border-radius:12px;padding:12px;display:grid;gap:8px}
+#lista .nome{font-weight:700;word-break:break-word}
+#lista .acoes{display:grid;grid-template-columns:1fr auto;gap:8px}
+#lista select{min-height:46px}
+.remover{min-height:46px;padding:0 16px;background:#fff;color:var(--erro);border:2px solid var(--erro);border-radius:12px;font:700 .95rem Nunito,sans-serif;cursor:pointer}
+.vazio{color:var(--suave);margin:14px 0 0}
+.resumo{display:grid;gap:6px;margin-top:8px}
+.resumo div{display:flex;justify-content:space-between;gap:10px}
+.resumo .total{border-top:2px solid var(--marinho);padding-top:10px;margin-top:6px;font:600 1.5rem Fredoka,sans-serif;color:var(--verde)}
+.pix{background:var(--marinho);color:#fff;border-radius:var(--raio);padding:18px;margin:12px 0}
+.pix code{display:block;background:rgba(255,255,255,.12);border-radius:10px;padding:12px;word-break:break-all;font-size:.95rem;margin:8px 0 12px}
+.pix .valor{font:600 2rem Fredoka,sans-serif;color:var(--amarelo)}
+.arquivo{display:block;border:2px dashed var(--roxo);border-radius:12px;padding:16px;text-align:center;font-weight:700;color:var(--roxo);cursor:pointer;margin-top:0}
+.arquivo input{position:absolute;opacity:0;width:1px;height:1px}
+.arquivo:focus-within{outline:3px solid var(--laranja);outline-offset:2px}
+#nomeArquivo{margin:8px 0 0;word-break:break-all;color:var(--suave)}
+.status{background:#fff;border:3px solid var(--laranja);border-radius:var(--raio);padding:22px}
+.status .selo{display:inline-block;background:var(--laranja);color:#fff;font-weight:700;border-radius:99px;padding:4px 14px;margin-bottom:10px}
+.status ol{padding-left:22px}
+.status li{margin-bottom:8px}
+.acoes-status{display:grid;gap:10px;margin-top:14px}
+.oculto{display:none!important}
+footer{background:var(--marinho);color:#fff;padding:28px 0;text-align:center;font-size:.95rem}
+footer a{color:var(--amarelo)}
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--marinho);color:#fff;padding:12px 20px;border-radius:99px;font-weight:700;z-index:9;max-width:90vw;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+@media(min-width:640px){
+  .fotos{grid-template-columns:1fr 1fr}.fotos figure:first-child{grid-column:1/-1}
+  .linha-add{grid-template-columns:1fr 200px auto;align-items:end}
+  .linha-add label{margin-top:0}
+  #lista li{grid-template-columns:1fr 200px auto;align-items:center}
+  #lista .acoes{display:contents}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="faixa"></div>
+<header class="topo">
+  <div class="wrap logos">
+    <img src="assets/logo-genesis.png" alt="Escola Gênesis" onerror="this.remove()">
+    <img src="assets/logo-exodo.png" alt="Colégio Êxodo" onerror="this.remove()">
+  </div>
+</header>
+
+<div class="hero">
+  <img src="assets/foto-1.jpg" alt="" onerror="this.remove()">
+  <div class="wrap">
+    <h1>Dia das Crianças 2026</h1>
+    <p>Um dia de esporte e convivência para toda a família.</p>
+    <div class="dados">
+      <div><span>Data:</span> 10/10/2026, das 8h às 17h</div>
+      <div><span>Local:</span> Projeto Soli Deo Gloria, Aldeia</div>
+    </div>
+    <p style="margin-top:22px"><a class="btn btn-a" href="#inscricao">Fazer inscrição</a></p>
+  </div>
+</div>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>O evento</h2>
+    <p>Alunos, familiares e amigos estão convidados. Cada pessoa que for ao evento precisa estar inscrita, inclusive adultos.</p>
+    <ul class="atividades" aria-label="Atividades">
+      <li>Futebol</li><li>Vôlei de praia</li><li>Basquete</li><li>Badminton</li>
+    </ul>
+    <div class="precos">
+      <div class="preco">Com almoço<b>R$ 35,00</b>por pessoa</div>
+      <div class="preco">Sem almoço<b>R$ 15,00</b>por pessoa</div>
+    </div>
+    <p><a href="https://www.projetosolideogloria.com/" target="_blank" rel="noopener noreferrer">Conheça o Projeto Soli Deo Gloria (abre em nova aba)</a></p>
+    <div class="fotos" id="fotos">
+      <figure><img src="assets/foto-1.jpg" alt="Área do Projeto Soli Deo Gloria" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+      <figure><img src="assets/foto-2.jpg" alt="Quadras do Projeto Soli Deo Gloria" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+      <figure><img src="assets/foto-3.jpg" alt="Espaço de convivência do Projeto Soli Deo Gloria" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="inscricao" style="background:#f1ede2">
+  <div class="wrap">
+    <h2>Inscrição</h2>
+
+    <form id="form" novalidate>
+      <div class="cartao">
+        <div class="passo"><i>1</i><h3>Seus dados</h3></div>
+        <label for="resp">Nome do responsável</label>
+        <input type="text" id="resp" autocomplete="name" maxlength="80" aria-describedby="e-resp">
+        <p class="erro" id="e-resp" role="alert"></p>
+        <label for="tel">Telefone com DDD</label>
+        <input type="tel" id="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="(00) 00000-0000" aria-describedby="e-tel">
+        <p class="erro" id="e-tel" role="alert"></p>
+      </div>
+
+      <div class="cartao">
+        <div class="passo"><i>2</i><h3>Participantes</h3></div>
+        <p style="margin-top:0">Adicione cada pessoa que vai ao evento, <strong>inclusive você</strong>, se for participar.</p>
+        <div class="linha-add">
+          <div>
+            <label for="pNome">Nome do participante</label>
+            <input type="text" id="pNome" maxlength="60" autocomplete="off">
+          </div>
+          <div>
+            <label for="pOpc">Opção</label>
+            <select id="pOpc">
+              <option value="com">Com almoço — R$ 35,00</option>
+              <option value="sem">Sem almoço — R$ 15,00</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-v" id="add">Adicionar</button>
+        </div>
+        <p class="erro" id="e-part" role="alert"></p>
+        <ul id="lista" aria-live="polite"></ul>
+        <p class="vazio" id="vazio">Nenhum participante adicionado.</p>
+
+        <div class="resumo" aria-live="polite">
+          <div><span>Com almoço (R$ 35,00)</span><strong id="qCom">0</strong></div>
+          <div><span>Sem almoço (R$ 15,00)</span><strong id="qSem">0</strong></div>
+          <div class="total"><span>Total</span><span id="total">R$ 0,00</span></div>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="passo"><i>3</i><h3>Pagamento por Pix</h3></div>
+        <div class="pix">
+          <div>Valor exato a pagar</div>
+          <div class="valor" id="valorPix">R$ 0,00</div>
+          <div style="margin-top:10px">Chave Pix (aleatória)</div>
+          <code id="chave">809aa5df-4a5b-4cb3-8efb-5303967e1f39</code>
+          <button type="button" class="btn btn-a btn-bloco" id="copiar">Copiar chave Pix</button>
+        </div>
+        <ol style="padding-left:22px;margin:0">
+          <li>Copie a chave e pague o valor acima no app do seu banco.</li>
+          <li>Salve o comprovante (imagem ou PDF).</li>
+          <li>Selecione o comprovante abaixo.</li>
+        </ol>
+      </div>
+
+      <div class="cartao">
+        <div class="passo"><i>4</i><h3>Comprovante</h3></div>
+        <label class="arquivo" for="arq">Selecionar comprovante (imagem ou PDF, até 5 MB)
+          <input type="file" id="arq" accept="image/jpeg,image/png,image/webp,application/pdf,.jpg,.jpeg,.png,.webp,.pdf">
+        </label>
+        <p id="nomeArquivo">Nenhum arquivo selecionado.</p>
+        <p class="erro" id="e-arq" role="alert"></p>
+      </div>
+
+      <div class="aviso"><strong>Atenção:</strong> este site não envia o comprovante. Ao tocar em “Enviar inscrição”, abrimos o WhatsApp da Escola Gênesis com a mensagem pronta. Você precisa <strong>anexar o comprovante na conversa e tocar em Enviar</strong> no WhatsApp.</div>
+
+      <p class="erro" id="e-geral" role="alert"></p>
+      <button type="submit" class="btn btn-p btn-bloco" id="enviar">Enviar inscrição</button>
+    </form>
+
+    <div id="status" class="status oculto" tabindex="-1" aria-live="polite">
+      <span class="selo">Aguardando conferência do pagamento</span>
+      <h3>Falta pouco: envie o comprovante no WhatsApp</h3>
+      <p>Sua inscrição <strong>ainda não está confirmada</strong>. A confirmação é feita pela escola depois de conferir o pagamento.</p>
+      <ol>
+        <li>No WhatsApp que abriu, toque no clipe (anexar) e escolha o comprovante <strong id="stArq"></strong>.</li>
+        <li>Toque em <strong>Enviar</strong>.</li>
+      </ol>
+      <div class="acoes-status">
+        <a class="btn btn-v" id="reabrir" href="#" target="_blank" rel="noopener noreferrer">Abrir o WhatsApp novamente</a>
+        <button type="button" class="btn btn-s" id="copiarMsg">Copiar mensagem</button>
+        <button type="button" class="btn btn-s" id="nova">Fazer outra inscrição</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Dia das Crianças — Escola Gênesis e Colégio Êxodo<br>10/10/2026, das 8h às 17h · Projeto Soli Deo Gloria, Aldeia</p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===== CONFIGURAÇÃO ===== */
+// Número do WhatsApp da Escola Gênesis: só dígitos, com código do país e DDD.
+// Exemplo de formato: 5500000000000 (não é um número real).
+const WHATSAPP_GENESIS = "COLOCAR_NUMERO_AQUI";
+/* ======================== */
+
+const PRECO = { com: 3500, sem: 1500 };          // em centavos
+const ROTULO = { com: "Com almoço", sem: "Sem almoço" };
+const CHAVE_PIX = "809aa5df-4a5b-4cb3-8efb-5303967e1f39";
+const MAX_PARTICIPANTES = 30;
+const MAX_BYTES = 5 * 1024 * 1024;
+const TIPOS = ["image/jpeg", "image/png", "image/webp", "application/pdf"];
+const EXT = /\.(jpe?g|png|webp|pdf)$/i;
+const STORE = "diaCriancas2026";
+
+const $ = id => document.getElementById(id);
+let participantes = [];
+let arquivo = null;
+let ultimaMensagem = "", ultimoLink = "";
+
+const brl = c => (c / 100).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+const numeroValido = () => /^\d{12,13}$/.test(WHATSAPP_GENESIS);
+
+function salvar() {
+  try { localStorage.setItem(STORE, JSON.stringify({ resp: $("resp").value, tel: $("tel").value, participantes })); } catch (e) {}
+}
+function carregar() {
+  try {
+    const d = JSON.parse(localStorage.getItem(STORE) || "null");
+    if (!d) return;
+    $("resp").value = typeof d.resp === "string" ? d.resp.slice(0, 80) : "";
+    $("tel").value = typeof d.tel === "string" ? d.tel.slice(0, 20) : "";
+    if (Array.isArray(d.participantes)) {
+      participantes = d.participantes.filter(p => p && typeof p.nome === "string" && PRECO[p.opc])
+        .slice(0, MAX_PARTICIPANTES).map(p => ({ nome: p.nome.slice(0, 60), opc: p.opc }));
+    }
+  } catch (e) {}
+}
+function limparSalvo() { try { localStorage.removeItem(STORE); } catch (e) {} }
+
+function toast(t) {
+  const el = $("toast"); el.textContent = t; el.classList.add("on");
+  clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("on"), 2600);
+}
+
+function totais() {
+  const com = participantes.filter(p => p.opc === "com").length;
+  const sem = participantes.length - com;
+  return { com, sem, total: com * PRECO.com + sem * PRECO.sem };
+}
+
+function desenhar() {
+  const ul = $("lista"); ul.textContent = "";
+  participantes.forEach((p, i) => {
+    const li = document.createElement("li");
+    const nome = document.createElement("span"); nome.className = "nome"; nome.textContent = p.nome;
+    const acoes = document.createElement("div"); acoes.className = "acoes";
+    const sel = document.createElement("select");
+    sel.setAttribute("aria-label", "Opção de " + p.nome);
+    Object.keys(ROTULO).forEach(k => {
+      const o = document.createElement("option");
+      o.value = k; o.textContent = ROTULO[k] + " — " + brl(PRECO[k]); o.selected = p.opc === k;
+      sel.appendChild(o);
+    });
+    sel.addEventListener("change", () => { participantes[i].opc = sel.value; desenhar(); salvar(); });
+    const rm = document.createElement("button");
+    rm.type = "button"; rm.className = "remover"; rm.textContent = "Remover";
+    rm.setAttribute("aria-label", "Remover " + p.nome);
+    rm.addEventListener("click", () => { participantes.splice(i, 1); desenhar(); salvar(); });
+    acoes.append(sel, rm); li.append(nome, acoes); ul.appendChild(li);
+  });
+  $("vazio").classList.toggle("oculto", participantes.length > 0);
+  const t = totais();
+  $("qCom").textContent = t.com; $("qSem").textContent = t.sem;
+  $("total").textContent = brl(t.total); $("valorPix").textContent = brl(t.total);
+}
+
+function limparNome(s) { return s.replace(/[\u0000-\u001f\u007f*_~`]/g, " ").replace(/\s+/g, " ").trim(); }
+
+function erro(id, msg) {
+  const el = $("e-" + id); el.textContent = msg || "";
+  const campo = { resp: "resp", tel: "tel" }[id];
+  if (campo) $(campo).setAttribute("aria-invalid", msg ? "true" : "false");
+}
+
+$("add").addEventListener("click", () => {
+  const nome = limparNome($("pNome").value);
+  if (nome.length < 2) return erro("part", "Digite o nome do participante.");
+  if (participantes.length >= MAX_PARTICIPANTES) return erro("part", "Limite de " + MAX_PARTICIPANTES + " participantes por inscrição.");
+  erro("part", "");
+  participantes.push({ nome, opc: $("pOpc").value });
+  $("pNome").value = ""; $("pNome").focus();
+  desenhar(); salvar();
+});
+$("pNome").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); $("add").click(); } });
+["resp", "tel"].forEach(id => $(id).addEventListener("input", salvar));
+
+$("copiar").addEventListener("click", () => copiar(CHAVE_PIX, "Chave Pix copiada."));
+$("copiarMsg").addEventListener("click", () => copiar(ultimaMensagem, "Mensagem copiada."));
+async function copiar(texto, ok) {
+  try { await navigator.clipboard.writeText(texto); toast(ok); }
+  catch (e) {
+    const ta = document.createElement("textarea"); ta.value = texto; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    let feito = false; try { feito = document.execCommand("copy"); } catch (x) {}
+    ta.remove(); toast(feito ? ok : "Não foi possível copiar. Selecione o texto e copie manualmente.");
+  }
+}
+
+$("arq").addEventListener("change", e => {
+  const f = e.target.files[0]; arquivo = null;
+  if (!f) { $("nomeArquivo").textContent = "Nenhum arquivo selecionado."; return erro("arq", ""); }
+  const tipoOk = TIPOS.includes(f.type) || (!f.type && EXT.test(f.name));
+  if (!tipoOk || !EXT.test(f.name)) { e.target.value = ""; $("nomeArquivo").textContent = "Nenhum arquivo selecionado."; return erro("arq", "Formato não aceito. Envie uma imagem (JPG, PNG, WebP) ou PDF."); }
+  if (f.size === 0) { e.target.value = ""; return erro("arq", "O arquivo está vazio."); }
+  if (f.size > MAX_BYTES) { e.target.value = ""; $("nomeArquivo").textContent = "Nenhum arquivo selecionado."; return erro("arq", "Arquivo muito grande. O limite é 5 MB."); }
+  arquivo = f; erro("arq", "");
+  $("nomeArquivo").textContent = "Selecionado: " + f.name + " (" + (f.size / 1024 < 1024 ? Math.round(f.size / 1024) + " KB" : (f.size / 1048576).toFixed(1) + " MB") + ")";
+});
+
+function montarMensagem(resp, tel) {
+  const t = totais();
+  const linhas = participantes.map((p, i) => (i + 1) + ". " + p.nome + " — " + ROTULO[p.opc] + " (" + brl(PRECO[p.opc]) + ")");
+  return [
+    "*Inscrição — Dia das Crianças 2026*",
+    "Escola Gênesis e Colégio Êxodo",
+    "10/10/2026, das 8h às 17h — Projeto Soli Deo Gloria, Aldeia",
+    "",
+    "Responsável: " + resp,
+    "Telefone: " + tel,
+    "",
+    "Participantes (" + participantes.length + "):",
+    ...linhas,
+    "",
+    "Com almoço: " + t.com + " × " + brl(PRECO.com),
+    "Sem almoço: " + t.sem + " × " + brl(PRECO.sem),
+    "Total pago via Pix: " + brl(t.total),
+    "",
+    "Comprovante: vou anexar nesta conversa."
+  ].join("\n");
+}
+
+$("form").addEventListener("submit", e => {
+  e.preventDefault();
+  const resp = limparNome($("resp").value);
+  const tel = $("tel").value.trim();
+  const dig = tel.replace(/\D/g, "");
+  let ok = true, primeiro = null;
+  const falha = (id, msg, campo) => { erro(id, msg); ok = false; if (!primeiro) primeiro = campo; };
+
+  erro("resp", ""); erro("tel", ""); erro("arq", arquivo ? "" : $("e-arq").textContent); erro("geral", "");
+  if (resp.length < 3) falha("resp", "Informe o nome do responsável.", $("resp"));
+  if (dig.length < 10 || dig.length > 11) falha("tel", "Informe o telefone com DDD (10 ou 11 números).", $("tel"));
+  if (participantes.length === 0) falha("part", "Adicione ao menos um participante.", $("pNome"));
+  if (!arquivo) falha("arq", "Selecione o comprovante do Pix (imagem ou PDF até 5 MB).", $("arq"));
+  if (!ok) { primeiro.focus(); return; }
+
+  if (!numeroValido()) {
+    erro("geral", "O número de WhatsApp da escola ainda não foi configurado neste site. Seus dados foram mantidos. Avise a escola.");
+    return;
+  }
+  const btn = $("enviar"); btn.disabled = true; btn.textContent = "Abrindo o WhatsApp…";
+  ultimaMensagem = montarMensagem(resp, tel);
+  ultimoLink = "https://wa.me/" + WHATSAPP_GENESIS + "?text=" + encodeURIComponent(ultimaMensagem);
+  $("reabrir").href = ultimoLink;
+  $("stArq").textContent = "“" + arquivo.name + "”";
+  const janela = window.open(ultimoLink, "_blank", "noopener");
+  setTimeout(() => {
+    btn.disabled = false; btn.textContent = "Enviar inscrição";
+    $("form").classList.add("oculto");
+    const st = $("status"); st.classList.remove("oculto"); st.focus(); st.scrollIntoView({ block: "start" });
+    if (!janela) toast("Se o WhatsApp não abriu, toque em “Abrir o WhatsApp novamente”.");
+  }, 600);
+});
+
+$("nova").addEventListener("click", () => {
+  if (!confirm("Iniciar uma nova inscrição? Os dados atuais serão apagados deste aparelho.")) return;
+  participantes = []; arquivo = null; $("form").reset(); limparSalvo();
+  $("nomeArquivo").textContent = "Nenhum arquivo selecionado.";
+  $("status").classList.add("oculto"); $("form").classList.remove("oculto");
+  desenhar(); $("inscricao").scrollIntoView();
+});
+
+carregar(); desenhar();
+</script>
+</body>
+</html>
