@@ -1,158 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dia das Crianças 2026 — Escola Gênesis e Colégio Êxodo</title>
-<meta name="description" content="Inscrição para o Dia das Crianças, 10/10/2026, no Projeto Soli Deo Gloria, Aldeia.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dia de Convivência 2026 — Escola Gênesis e Colégio Êxodo</title>
+  <meta name="description" content="Inscrição para o Dia de Convivência, 10/10/2026, no Projeto Soli Deo Gloria, Aldeia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="faixa"></div>
-<header class="topo">
-  <div class="wrap logos">
-    <img src="assets/logo-genesis.jpg" alt="Escola Gênesis">
-    <img src="assets/logo-exodo.jpg" alt="Colégio Êxodo">
-  </div>
-</header>
+  <!-- Colored stripe at the top of the page -->
+  <div class="faixa"></div>
 
-<div class="hero">
-  <img src="assets/foto-1.jpg" alt="">
-  <div class="wrap">
-    <h1>Dia das Crianças 2026</h1>
-    <p>Um dia de esporte e convivência para toda a família.</p>
-    <div class="dados">
-      <div><span>Data:</span> 10/10/2026, das 8h às 17h</div>
-      <div><span>Local:</span> Projeto Soli Deo Gloria, Aldeia</div>
+  <!-- Header with the school logos -->
+  <header class="topo">
+    <div class="wrap logos">
+      <img src="assets/logo-genesis.jpg" alt="Escola Gênesis">
+      <img src="assets/logo-exodo.jpg" alt="Colégio Êxodo">
     </div>
-    <p class="chamada"><a class="btn btn-a" href="#inscricao">Fazer inscrição</a></p>
-  </div>
-</div>
+  </header>
 
-<main>
-<section>
-  <div class="wrap">
-    <h2>O evento</h2>
-    <p>Alunos, familiares e amigos estão convidados. Cada pessoa que for ao evento precisa estar inscrita, inclusive adultos.</p>
-    <ul class="atividades" aria-label="Atividades">
-      <li>Futebol</li><li>Vôlei de praia</li><li>Basquete</li><li>Badminton</li>
-    </ul>
-    <div class="precos">
-      <div class="preco">Com almoço<b>R$ 35,00</b>por pessoa</div>
-      <div class="preco">Sem almoço<b>R$ 15,00</b>por pessoa</div>
-    </div>
-    <p><a href="https://www.projetosolideogloria.com/" target="_blank" rel="noopener noreferrer">Conheça o Projeto Soli Deo Gloria (abre em nova aba)</a></p>
-    <div class="fotos" id="fotos">
-      <figure><img src="assets/foto-1.jpg" alt="Área do Projeto Soli Deo Gloria" loading="lazy"></figure>
-      <figure><img src="assets/foto-2.jpg" alt="Quadras do Projeto Soli Deo Gloria" loading="lazy"></figure>
-      <figure><img src="assets/foto-3.jpg" alt="Espaço de convivência do Projeto Soli Deo Gloria" loading="lazy"></figure>
-    </div>
-  </div>
-</section>
+  <!-- Hero: event name, date and location -->
+  <div class="hero">
+    <img src="assets/foto-1.jpg" alt="">
+    <div class="wrap">
+      <h1>Dia de Convivência 2026</h1>
 
-<section id="inscricao">
-  <div class="wrap">
-    <h2>Inscrição</h2>
-
-    <form id="form" novalidate>
-      <div class="cartao">
-        <div class="passo"><i>1</i><h3>Seus dados</h3></div>
-        <label for="resp">Nome do responsável</label>
-        <input type="text" id="resp" autocomplete="name" maxlength="80" aria-describedby="e-resp">
-        <p class="erro" id="e-resp" role="alert"></p>
-        <label for="tel">Telefone com DDD</label>
-        <input type="tel" id="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="(00) 00000-0000" aria-describedby="e-tel">
-        <p class="erro" id="e-tel" role="alert"></p>
+      <p>Um dia de esporte e convivência para toda a família.</p>
+      <div class="dados">
+        <div><span>Data:</span> 10/10/2026, das 8h às 17h</div>
+        <div><span>Local:</span> Projeto Soli Deo Gloria, Aldeia</div>
       </div>
+      <p class="chamada"><a class="botao botao-amarelo" href="#inscricao">Fazer inscrição</a></p>
+    </div>
+  </div>
 
-      <div class="cartao">
-        <div class="passo"><i>2</i><h3>Participantes</h3></div>
-        <p class="intro">Adicione cada pessoa que vai ao evento, <strong>inclusive você</strong>, se for participar.</p>
-        <div class="linha-add">
-          <div>
-            <label for="pNome">Nome do participante</label>
-            <input type="text" id="pNome" maxlength="60" autocomplete="off">
+  <main>
+
+    <!-- About the event: activities, prices and photos of the venue -->
+    <section>
+      <div class="wrap">
+        <h2>O evento</h2>
+        <p>Alunos, familiares e amigos estão convidados. Cada pessoa que for ao evento precisa estar inscrita, inclusive adultos.</p>
+
+        <ul class="atividades" aria-label="Atividades">
+          <li>Futebol</li>
+          <li>Vôlei de praia</li>
+          <li>Basquete</li>
+          <li>Badminton</li>
+        </ul>
+
+        <div class="precos">
+          <div class="preco">
+            Com almoço
+            <strong>R$ 35,00</strong>
+            por pessoa
           </div>
-          <div>
-            <label for="pOpc">Opção</label>
-            <select id="pOpc">
-              <option value="com">Com almoço — R$ 35,00</option>
-              <option value="sem">Sem almoço — R$ 15,00</option>
-            </select>
+          <div class="preco">
+            Sem almoço
+            <strong>R$ 15,00</strong>
+            por pessoa
           </div>
-          <button type="button" class="btn btn-v" id="add">Adicionar</button>
         </div>
-        <p class="erro" id="e-part" role="alert"></p>
-        <ul id="lista" aria-live="polite"></ul>
-        <p class="vazio" id="vazio">Nenhum participante adicionado.</p>
 
-        <div class="resumo" aria-live="polite">
-          <div><span>Com almoço (R$ 35,00)</span><strong id="qCom">0</strong></div>
-          <div><span>Sem almoço (R$ 15,00)</span><strong id="qSem">0</strong></div>
-          <div class="total"><span>Total</span><span id="total">R$ 0,00</span></div>
+        <p><a href="https://www.projetosolideogloria.com/" target="_blank" rel="noopener noreferrer">Conheça o Projeto Soli Deo Gloria (abre em nova aba)</a></p>
+
+        <div class="fotos">
+          <figure><img src="assets/foto-1.jpg" alt="Área do Projeto Soli Deo Gloria" loading="lazy"></figure>
+          <figure><img src="assets/foto-2.jpg" alt="Quadras do Projeto Soli Deo Gloria" loading="lazy"></figure>
+          <figure><img src="assets/foto-3.jpg" alt="Espaço de convivência do Projeto Soli Deo Gloria" loading="lazy"></figure>
         </div>
       </div>
+    </section>
 
-      <div class="cartao">
-        <div class="passo"><i>3</i><h3>Pagamento por Pix</h3></div>
-        <div class="pix">
-          <div>Valor exato a pagar</div>
-          <div class="valor" id="valorPix">R$ 0,00</div>
-          <div class="rotulo">Chave Pix (aleatória)</div>
-          <code id="chave">809aa5df-4a5b-4cb3-8efb-5303967e1f39</code>
-          <button type="button" class="btn btn-a btn-bloco" id="copiar">Copiar chave Pix</button>
+    <!-- Registration: a 3-step form, replaced by the final instructions after submitting -->
+    <section id="inscricao">
+      <div class="wrap">
+        <h2>Inscrição</h2>
+
+        <form id="formulario" novalidate>
+
+          <!-- Step 1: guardian's details -->
+          <div class="cartao">
+            <div class="passo"><span class="numero">1</span><h3>Seus dados</h3></div>
+
+            <label for="responsavel">Nome do responsável</label>
+            <input type="text" id="responsavel" autocomplete="name" maxlength="80" aria-describedby="erro-responsavel">
+            <p class="erro" id="erro-responsavel" role="alert"></p>
+
+            <label for="telefone">Telefone com DDD</label>
+            <input type="tel" id="telefone" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="(00) 00000-0000" aria-describedby="erro-telefone">
+            <p class="erro" id="erro-telefone" role="alert"></p>
+          </div>
+
+          <!-- Step 2: participant list and price summary -->
+          <div class="cartao">
+            <div class="passo"><span class="numero">2</span><h3>Participantes</h3></div>
+            <p class="intro">Adicione cada pessoa que vai ao evento, <strong>inclusive você</strong>, se for participar.</p>
+
+            <div class="linha-adicionar">
+              <div>
+                <label for="nome-participante">Nome do participante</label>
+                <input type="text" id="nome-participante" maxlength="60" autocomplete="off">
+              </div>
+              <div>
+                <label for="opcao-participante">Opção</label>
+                <select id="opcao-participante">
+                  <option value="com">Com almoço — R$ 35,00</option>
+                  <option value="sem">Sem almoço — R$ 15,00</option>
+                </select>
+              </div>
+              <button type="button" class="botao botao-verde" id="adicionar-participante">Adicionar</button>
+            </div>
+            <p class="erro" id="erro-participantes" role="alert"></p>
+
+            <!-- Filled in by js/script.js -->
+            <ul id="lista-participantes" aria-live="polite"></ul>
+            <p class="vazio" id="lista-vazia">Nenhum participante adicionado.</p>
+
+            <div class="resumo" aria-live="polite">
+              <div><span>Com almoço (R$ 35,00)</span><strong id="quantidade-com-almoco">0</strong></div>
+              <div><span>Sem almoço (R$ 15,00)</span><strong id="quantidade-sem-almoco">0</strong></div>
+              <div class="total"><span>Total</span><span id="valor-total">R$ 0,00</span></div>
+            </div>
+          </div>
+
+          <!-- Step 3: Pix payment (the "Copiar chave Pix" button copies the key shown here) -->
+          <div class="cartao">
+            <div class="passo"><span class="numero">3</span><h3>Pagamento por Pix</h3></div>
+            <div class="pix">
+              <div>Valor exato a pagar</div>
+              <div class="valor" id="valor-pix">R$ 0,00</div>
+              <div class="rotulo">Chave Pix (aleatória)</div>
+              <code id="chave-pix">809aa5df-4a5b-4cb3-8efb-5303967e1f39</code>
+              <button type="button" class="botao botao-amarelo botao-largura-total" id="copiar-chave-pix">Copiar chave Pix</button>
+            </div>
+            <ol class="instrucoes">
+              <li>Copie a chave e pague o valor acima no app do seu banco.</li>
+              <li>Salve o comprovante (imagem ou PDF).</li>
+              <li>Depois de enviar a inscrição, mande o comprovante no WhatsApp da escola.</li>
+            </ol>
+          </div>
+
+          <div class="aviso">
+            <strong>Atenção:</strong> ao tocar em “Enviar inscrição”, abrimos o WhatsApp da Escola Gênesis com a mensagem pronta.
+            Envie a mensagem e, na mesma conversa, <strong>anexe o comprovante do Pix e toque em Enviar</strong>.
+          </div>
+
+          <button type="submit" class="botao botao-principal botao-largura-total" id="enviar-inscricao">Enviar inscrição</button>
+        </form>
+
+        <!-- Final instructions: shown in place of the form after submitting -->
+        <div id="status" class="status oculto" tabindex="-1" aria-live="polite">
+          <span class="selo">Aguardando conferência do pagamento</span>
+          <h3>Falta pouco: envie o comprovante no WhatsApp</h3>
+          <p>Sua inscrição <strong>ainda não está confirmada</strong>. A confirmação é feita pela escola depois de conferir o pagamento.</p>
+          <ol>
+            <li>No WhatsApp que abriu, toque em <strong>Enviar</strong> para mandar a mensagem da inscrição.</li>
+            <li>Na mesma conversa, toque no clipe (anexar), escolha o comprovante do Pix e toque em <strong>Enviar</strong>.</li>
+          </ol>
+          <div class="acoes-status">
+            <a class="botao botao-verde" id="reabrir-whatsapp" href="#" target="_blank" rel="noopener noreferrer">Abrir o WhatsApp novamente</a>
+            <button type="button" class="botao botao-secundario" id="copiar-mensagem">Copiar mensagem</button>
+            <button type="button" class="botao botao-secundario" id="nova-inscricao">Fazer outra inscrição</button>
+          </div>
         </div>
-        <ol class="instrucoes">
-          <li>Copie a chave e pague o valor acima no app do seu banco.</li>
-          <li>Salve o comprovante (imagem ou PDF).</li>
-          <li>Selecione o comprovante abaixo.</li>
-        </ol>
       </div>
+    </section>
 
-      <div class="cartao">
-        <div class="passo"><i>4</i><h3>Comprovante</h3></div>
-        <label class="arquivo" for="arq">Selecionar comprovante (imagem ou PDF, até 5 MB)
-          <input type="file" id="arq" accept="image/jpeg,image/png,image/webp,application/pdf,.jpg,.jpeg,.png,.webp,.pdf">
-        </label>
-        <p id="nomeArquivo">Nenhum arquivo selecionado.</p>
-        <p class="erro" id="e-arq" role="alert"></p>
-      </div>
+  </main>
 
-      <div class="aviso"><strong>Atenção:</strong> este site não envia o comprovante. Ao tocar em “Enviar inscrição”, abrimos o WhatsApp da Escola Gênesis com a mensagem pronta. Você precisa <strong>anexar o comprovante na conversa e tocar em Enviar</strong> no WhatsApp.</div>
-
-      <p class="erro" id="e-geral" role="alert"></p>
-      <button type="submit" class="btn btn-p btn-bloco" id="enviar">Enviar inscrição</button>
-    </form>
-
-    <div id="status" class="status oculto" tabindex="-1" aria-live="polite">
-      <span class="selo">Aguardando conferência do pagamento</span>
-      <h3>Falta pouco: envie o comprovante no WhatsApp</h3>
-      <p>Sua inscrição <strong>ainda não está confirmada</strong>. A confirmação é feita pela escola depois de conferir o pagamento.</p>
-      <ol>
-        <li>No WhatsApp que abriu, toque no clipe (anexar) e escolha o comprovante <strong id="stArq"></strong>.</li>
-        <li>Toque em <strong>Enviar</strong>.</li>
-      </ol>
-      <div class="acoes-status">
-        <a class="btn btn-v" id="reabrir" href="#" target="_blank" rel="noopener noreferrer">Abrir o WhatsApp novamente</a>
-        <button type="button" class="btn btn-s" id="copiarMsg">Copiar mensagem</button>
-        <button type="button" class="btn btn-s" id="nova">Fazer outra inscrição</button>
-      </div>
+  <footer>
+    <div class="wrap">
+      <p>Dia de Convivência — Escola Gênesis e Colégio Êxodo<br>10/10/2026, das 8h às 17h · Projeto Soli Deo Gloria, Aldeia</p>
     </div>
-  </div>
-</section>
-</main>
+  </footer>
 
-<footer>
-  <div class="wrap">
-    <p>Dia das Crianças — Escola Gênesis e Colégio Êxodo<br>10/10/2026, das 8h às 17h · Projeto Soli Deo Gloria, Aldeia</p>
-  </div>
-</footer>
-<div class="toast" id="toast" role="status"></div>
+  <!-- Short message that pops up at the bottom of the screen (e.g. "Chave Pix copiada.") -->
+  <div class="notificacao" id="notificacao" role="status"></div>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
